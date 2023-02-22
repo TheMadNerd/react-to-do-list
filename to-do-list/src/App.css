@@ -1,0 +1,13 @@
+.App {
+  text-align: center;
+}
+
+.TaskAdd {
+  margin: 20px;
+  padding: 20px;
+  border-bottom: solid;
+}
+
+.TaskToDo {
+  border-bottom: solid;
+}
