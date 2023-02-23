@@ -1,30 +1,18 @@
-
+import React, {Component} from 'react';
+import AddTask from './AddTask';
+import TaskList from './TaskList';
 import './App.css';
 
-function App() {
-
-  const current = new Date();
-  const date = `${current.getFullYear()}-${('0' + current.getMonth()).slice(-2)}-${('0' + current.getDate()).slice(-2)}`;
-
-  return (
-    <div className="App">
-      <div className='TaskAdd'>
-        <div>
-          <input type='text' placeholder='Add task'></input>
-          <input type='checkbox' />Priority
-        </div>
-          Do kiedy zrobić <input type='date' value={date} />
-          <button>Add</button>
+class App extends Component {
+  render() {
+    return (
+      <div className='App'>
+        TODO APP
+        <AddTask />
+        <TaskList />
       </div>
-      <div className='TaskToDo'>
-        <h1>Tasks to do</h1>
-      </div>
-      <div className='TaskDone'>
-        <h2>Tasks already done ()</h2>
-      </div>
-    </div>
-  
-  );
+    )
+  }
 }
 
 export default App;
