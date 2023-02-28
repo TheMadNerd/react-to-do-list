@@ -8,7 +8,7 @@ class AddTask extends Component {
     render() {
         return (
         <div>
-            Dodaj Task
+            
         </div>
         )
     }
