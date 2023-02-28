@@ -1,9 +1,15 @@
 import React from 'react'
 
-const Task = () => {
+
+
+const Task = (props) => {
+
+    
 	return( 
     <div>
-        Task
+        {props.name} - do {props.date}  
+        <button>Zostało zrobione</button>
+        <button>X</button>
     </div>
     )
 }

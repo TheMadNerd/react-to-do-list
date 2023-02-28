@@ -4,8 +4,8 @@ import Task from './Task'
 const TaskList = () => {
 	return (
         <div>
-            Lista Tasków
-            <Task />
+            Zadania do zrobienia
+            <Task name='Daniel' date='2019-01-02' />
             <Task />
         </div>
     ) 
