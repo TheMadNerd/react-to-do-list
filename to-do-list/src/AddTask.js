@@ -7,8 +7,9 @@ const AddTask = props => {
 				<input type="text" placeholder="dodaj zadanie" value={props.taskName} onChange={props.taskNameHandler}></input>
 				<input type="checkbox" value={props.prio} onClick={props.checkBoxHandler}></input> Priorytet
 			</div>
-			Do kiedy zrobić <input type="date" value={props.date} min={props.date} onChange={props.dateChangeHandler}></input>
-			<button>DODAJ</button>
+			Do kiedy zrobić{' '}
+			<input type="date" value={props.newTaskDate} min={props.newTaskDate} onChange={props.dateChangeHandler}></input>
+			<button onClick={props.addButtonHandler}>DODAJ</button>
 		</div>
 	)
 }
